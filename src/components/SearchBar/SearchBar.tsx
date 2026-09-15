@@ -18,25 +18,26 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
     }
 
     onSubmit(query);
-
     formRef.current?.reset();
   };
 
   return (
-    <header className={css.searchHeader}>
-      <form ref={formRef} action={handleSubmit} className={css.searchForm}>
-        <input
-          type="text"
-          name="query"
-          autoComplete="off"
-          autoFocus
-          placeholder="Search images and photos"
-          className={css.searchInput}
-        />
-        <button type="submit" className={css.searchButton}>
-          Search
-        </button>
-      </form>
+    <header className={css.header}>
+      <div className={css.container}>
+        <form ref={formRef} action={handleSubmit} className={css.form}>
+          <input
+            type="text"
+            name="query"
+            autoComplete="off"
+            autoFocus
+            placeholder="Search images and photos"
+            className={css.input}
+          />
+          <button type="submit" className={css.button}>
+            Search
+          </button>
+        </form>
+      </div>
     </header>
   );
 };

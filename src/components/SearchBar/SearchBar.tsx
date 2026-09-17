@@ -24,6 +24,14 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
   return (
     <header className={css.header}>
       <div className={css.container}>
+        <a
+          className={css.link}
+          href="https://www.themoviedb.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by TMDB
+        </a>
         <form ref={formRef} action={handleSubmit} className={css.form}>
           <input
             type="text"

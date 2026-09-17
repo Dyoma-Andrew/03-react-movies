@@ -51,7 +51,7 @@ export default function App() {
         />
       )}
 
-      <Toaster position="top-right" />
+      <Toaster />
     </div>
   );
 }

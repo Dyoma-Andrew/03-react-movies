@@ -18,7 +18,6 @@ export const SearchBar: React.FC<SearchBarProps> = ({ onSubmit }) => {
     }
 
     onSubmit(query);
-    formRef.current?.reset();
   };
 
   return (
